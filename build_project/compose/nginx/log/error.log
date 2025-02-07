@@ -1,0 +1,38 @@
+2025/02/06 12:24:37 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:49
+2025/02/06 12:24:38 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:49
+2025/02/06 12:24:38 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:49
+2025/02/06 12:24:39 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:49
+2025/02/06 12:24:40 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nginx.conf:49
+2025/02/06 12:25:40 [notice] 1#1: using the "epoll" event method
+2025/02/06 12:25:40 [notice] 1#1: nginx/1.27.4
+2025/02/06 12:25:40 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/02/06 12:25:40 [notice] 1#1: OS: Linux 6.8.0-52-generic
+2025/02/06 12:25:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/02/06 12:25:40 [notice] 1#1: start worker processes
+2025/02/06 12:25:40 [notice] 1#1: start worker process 21
+2025/02/06 12:25:40 [notice] 1#1: start worker process 22
+2025/02/06 12:25:40 [notice] 1#1: start worker process 23
+2025/02/06 12:25:40 [notice] 1#1: start worker process 24
+2025/02/06 12:46:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/02/06 12:46:38 [notice] 21#21: gracefully shutting down
+2025/02/06 12:46:38 [notice] 22#22: gracefully shutting down
+2025/02/06 12:46:38 [notice] 23#23: gracefully shutting down
+2025/02/06 12:46:38 [notice] 21#21: exiting
+2025/02/06 12:46:38 [notice] 23#23: exiting
+2025/02/06 12:46:38 [notice] 22#22: exiting
+2025/02/06 12:46:38 [notice] 23#23: exit
+2025/02/06 12:46:38 [notice] 22#22: exit
+2025/02/06 12:46:38 [notice] 21#21: exit
+2025/02/06 12:46:38 [notice] 24#24: gracefully shutting down
+2025/02/06 12:46:38 [notice] 24#24: exiting
+2025/02/06 12:46:38 [notice] 24#24: exit
+2025/02/06 12:46:38 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/02/06 12:46:38 [notice] 1#1: worker process 21 exited with code 0
+2025/02/06 12:46:38 [notice] 1#1: worker process 22 exited with code 0
+2025/02/06 12:46:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/06 12:46:38 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/02/06 12:46:38 [notice] 1#1: worker process 24 exited with code 0
+2025/02/06 12:46:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/02/06 12:46:38 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/02/06 12:46:38 [notice] 1#1: worker process 23 exited with code 0
+2025/02/06 12:46:38 [notice] 1#1: exit
