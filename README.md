@@ -1,4 +1,4 @@
-
+```shell
 ├── docker-compose.yml      # 部署编排文件
 ├── compose                 # 存放各容器服务Dockerfile配置文件
 │   ├── mysql
@@ -15,7 +15,7 @@
 │   │   │   └── error.log
 │   │   ├── nginx.conf      # nginx配置文件
 │   │   ├── phone.tar.gz    # vue静态打包文件手机端
-│   │   └── web.tar.gz      # vue静态打包文件pc端
+│   │   └── admin.tar.gz    # react静态打包文件后台管理系统
 │   ├── redis
 │   │   └── redis.conf      # redis配置文件
 │   └── uwsgi               # 挂载保存flask+uwsgi容器内uwsgi日志
@@ -28,3 +28,5 @@
     ├── static      # 静态文件
     ├── uwsgi.ini   # uwsgi配置
     └── uwsgi.log
+```
+
