@@ -7,12 +7,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 ADD ./nginx.conf /etc/nginx/conf.d/
 
 # 静态文件拷贝容器，并解压
-COPY phone.tar.gz /usr/share/nginx/html/phone.tar.gz
-COPY admin.tar.gz /usr/share/nginx/html/admin.tar.gz
-
-RUN tar -xzf /usr/share/nginx/html/phone.tar.gz -C /usr/share/nginx/html/ && \
-    tar -xzf /usr/share/nginx/html/admin.tar.gz -C /usr/share/nginx/html/ && \
-    rm /usr/share/nginx/html/phone.tar.gz /usr/share/nginx/html/admin.tar.gz
+ADD phone.tar.gz /opt/
+ADD admin.tar.gz /opt/
 
 # 关闭守护模式
 CMD ["nginx", "-g", "daemon off;"]

@@ -1,9 +1,8 @@
 version: "3"
 
 volumes: # 自定义数据卷，位于宿主机/var/lib/docker/volumes内
-  myproject_db_vol: # 定义数据卷同步容器内mysql数据
-  myproject_redis_vol: # 定义数据卷同步redis容器内数据
-
+  myproject_db_vol:  # 定义数据卷同步容器内mysql数据
+  
 services:
   db:
     image: mysql:8.0.33
@@ -36,7 +35,7 @@ services:
     depends_on: # 依赖关系
        - db
     environment:
-       - DEBUG=True
+       - DEBUG=False
     restart: always
     tty: true
     stdin_open: true
@@ -58,7 +57,10 @@ services:
     restart: always
 
   nsfw:
+    image: eugencepoi/nsfw_api:latest
     ports:
        - "5000:5000"
+    environment:
+      - PORT=5000
     restart: always
 
