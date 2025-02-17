@@ -1,4 +1,3 @@
-version: "3"
 
 volumes: # 自定义数据卷，位于宿主机/var/lib/docker/volumes内
   myproject_db_vol:  # 定义数据卷同步容器内mysql数据
