@@ -43,12 +43,13 @@ services:
     build: ./compose/nginx
     ports:
        - "80:80"
-       - "8000:8000"
+       - "443:443"
     expose:
        - "80"
-       - "8000"
+       - "443"
     volumes:
        - ./compose/nginx/log:/var/log/nginx # 挂载日志
+       - ./compose/nginx/ssl:/etc/nginx/ssl  # 挂载 SSL 证书
     links:
        - web
     depends_on:
